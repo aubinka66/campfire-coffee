@@ -1,9 +1,0 @@
-/* my cs will be in here */
-var duck = {
-material: 'rubber',
-color: 'red',
-squeaks: false,
-says: function() {
-  console.log('quack!!!');
-}
-};

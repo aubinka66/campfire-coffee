@@ -1,0 +1,47 @@
+
+
+/*body {
+  background-image: url("https://raw.githubusercontent.com/codefellows/sea-201d5/master/week-2/assets/campfire-coffee.jpg");
+}*/
+h1 {
+    background-color: yellow;
+}
+
+h1.ex {
+    border:1px solid red;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+</style>
+</head>
+<body>
+div {
+    background-color: orange;
+}
+
+div.ex {
+    border:1px solid red;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+</style>
+</head>
+<body>
+p {
+    background-color: green;
+}
+
+p.ex {
+    border:1px solid red;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    margin-right: 150px;
+    margin-left: 80px;
+}
+</style>
+</head>
+<body>
