@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html>
-<body>
-  <!--  You will add an event listener in javascript to link to the form id  -->
-  <form id="newLocation">
-    <legend>Create your own entry here</legend>
-    <fieldset>
-      <label>Location</label>
-      <input type="text" size=15>
-      <p></p>
-      <label>Minimum Customers</label>
-      <input type="number" size=15>
-      <p></p>
-      <label>Maximum Customers</label>
-      <input type="number" size=15>
-      <p></p>
-      <label>Cups per customer</label>
-      <input type="number" size=15>
-      <p></p>
-      <label>Pounds per customer</label>
-      <input type="number" size=15>
-    </fieldset>
-  </form>
-</body>
+  <head>
+    <title></title>
+  </head>
+  <div class='wrapper'>
+    <body>
+      <!--  You will add an event listener in javascript to link to the form id  -->
+      <form id="newLocation">
+        <legend>Create your own entry here</legend>
+        <fieldset>
+          <label>Location</label>
+          <input type="text" size=15 id="newLocationUserInput1">
+          <p></p>
+          <label>Minimum Customers</label>
+          <input type="number" size=15 id="newMinCustUserInput2">
+          <p></p>
+          <label>Maximum Customers</label>
+          <input type="number" size=15 id="newMaxCustUserInput3">
+          <p></p>
+          <label>Cups per customer</label>
+          <input type="number" size=15 id="newCupsPerCustUserInput4">
+          <p></p>
+          <label>Pounds per customer</label>
+          <input type="number" size=15 id="newLbsPerCustUserInput5">
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    </body>
+
+  <div><p id='result'></p></div>
+  </div>
+    <section id= "table"></section>
+    <br>
+    <br>
+    <h2 id="totalss">Total Beans Per Day Below.</h2>
+<script src = "app1.js">
+</script>
+  </body>
 </html>

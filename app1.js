@@ -1,15 +1,18 @@
 "use strict"
 var hourArray = ['6am: ', '7am: ', '8am: ', '9am: ', '10am: ', '11am: ', '12am: ', '1pm: ', '2pm: ', '3pm: ', '4pm: ', '5pm: ', '6pm: ', '7pm: ', '8pm: ', '9pm: '];
 // below is a Object-special-construction-CAPITALIZE first letter to indicate
+var totalDailyLbs = 0;
 function Kiosk(locName, minCust, maxCust, cupsPer, lbsPer) {
 this.locName = locName;
 this.minCust = minCust;
 this.maxCust = maxCust;
 this.cupsPer = cupsPer;
 this.lbsPer = lbsPer;
+this.totalDailyLbs = 0;
 this.arrayCupsEachHour = [];
 this.arrayLbsFromCups = [];
 this.arrayLbsEachHour = [];
+
 };
 //after prototype. we name the function we are using
 Kiosk.prototype.randomCust = function(min, max){
@@ -27,6 +30,8 @@ Kiosk.prototype.hourlySales = function() {
       this.arrayLbsFromCups.push(cupsEachHour/20);
       var lbsEachHour = generateRandom * this.lbsPer;
       this.arrayLbsEachHour.push(lbsEachHour);
+      totalDailyLbs += cupsEachHour/20 + lbsEachHour;
+      console.log(this.locName + " ; " + this.totalDailyLbs);
       // console.log("array of cups each hour = " + this.arrayCupsEachHour);
       // console.log("array of pounds each hour = " + this.arrayLbsEachHour);
       // create a row, append the row, create a data cell, append that cell
@@ -41,6 +46,17 @@ var seattlePublicLibrary = new Kiosk("Seattle Public Library", 49, 75, 2.6, 0.2)
 var southLakeUnion = new Kiosk("South Lake Union", 35, 88, 1.3, 3.7);
 var seaTacAirport = new Kiosk("Sea-Tac Airport", 68, 124, 1.1, 2.7);
 var websiteSales = new Kiosk("Website Sales", 3, 6, 0, 6.7);
+// how do i generate new variable input on submit
+
+
+// use an eventlistener for the event
+// var subButton = document.getElementById('subButton');
+// subButton.addEventListener('click', getUserName, false);
+//
+// var generateNewUserInput = new Kiosk("nameField", 0, 2, 2, 2);
+
+// test ------------------------
+
 
 pikePlace.hourlySales();
 capitalHill.hourlySales();
@@ -48,6 +64,9 @@ seattlePublicLibrary.hourlySales();
 southLakeUnion.hourlySales();
 seaTacAirport.hourlySales();
 websiteSales.hourlySales();
+
+// generateNewUserInput.hourlySales();
+// console.log(generateNewUserInput.hourlySales);
 
 // HERE FROM ABOVE IS PERFECT!!!! DONT FUCK W/ THIS
 
@@ -85,3 +104,13 @@ table.appendChild(row2)
 };
 
 createTable();
+// new input from user
+var x = totalDailyLbs.toFixed(0);
+document.write(x + 'lbs of beans needed per day.');
+
+var newLocationUserInput1 = document.getElementById('newLocationUserInput1').value;
+// console.log('newLocationUserInput1').value;
+var newMinCustUserInput2 = document.getElementById('newMinCustUserInput2');
+var newMaxCustUserInput3 = document.getElementById('newMaxCustUserInput3');
+var newCupsPerCustUserInput4 = document.getElementById('newCupsPerCustUserInput4');
+var newLbsPerCustUserInput5 = document.getElementById('newLbsPerCustUserInput5');

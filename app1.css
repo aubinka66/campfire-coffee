@@ -1,3 +1,137 @@
-body {
-  color: blue
+#logo { float: left;
+height: 80px }
+
+head {
+background-image: url("https://github.com/codefellows/sea-201d5/blob/master/week-2/assets/campsite-tent-night.jpg?raw=true");
 }
+.tiny{
+	background-image: url("https://raw.githubusercontent.com/codefellows/sea-201d5/master/week-2/assets/campfire-coffee.jpg");
+	max-height: 100px;
+	z-index: -1;
+}
+body
+{
+	margin: 0;
+	padding: 0;
+	color: green;
+	background-color: #eee;
+	font: 1em/1.2 "Helvetica Neue", Helvetica, Arial, Geneva, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6
+{
+	margin: 0 0 .5em;
+	font-weight: 500;
+	line-height: 1.1;
+}
+
+h1 { font-size: 2.25em; }
+h2 { font-size: 1.75em; }
+h3 { font-size: 1.375em; }
+h4 { font-size: 1.125em; }
+h5 { font-size: 1em; }
+h6 { font-size: .875em; }
+li { font-size: 1.4em;}
+
+p
+{
+	margin: 0 0 1.5em;
+	line-height: 1.5;
+	font-size: 1.1em;
+}
+
+hr
+{
+	height: 0;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	border: 0;
+	border-top: 1px solid #ddd;
+}
+
+.container
+{
+	max-width: 70em;
+	margin: 0 auto;
+}
+
+.header
+{
+	color: #fff;
+background-image: url("https://github.com/codefellows/sea-201d5/blob/master/week-2/assets/campsite-tent-night.jpg?raw=true");
+	padding: 1em 1.25em;
+
+
+}
+
+.header-heading { margin: 0;
+    align-content: center;
+}
+
+.nav-bar
+{
+	background: #000;
+	padding: 0;
+}
+
+.content
+{
+	overflow: hidden;
+	padding: 1em 1.25em;
+	background-image: url("http://www.ultrahighdefinitionwallpapers.com/wp-content/uploads/2015/05/Camping-Forest-Night-Lights-Creativity-uhd-wallpapers.jpg")
+}
+
+.main, .aside
+{
+	margin-bottom: 1em;
+}
+.nav
+{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+.nav li
+{
+    display:inline-block;
+    width:18%;
+    margin:0;
+    padding:0;
+}
+
+.img-responsive { max-width: 100%; }
+
+.list-inline
+{
+	padding-left: 0;
+	margin-left: -5px;
+	list-style: none;
+}
+
+.list-inline > li
+{
+	display: inline-block;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+/*brings sidebar into dropdown...*/
+@media (min-width: 55em)
+{
+	.header { padding: 1.5em 3em; }
+	.nav-bar { padding: 1em 3em; }
+	.content { padding: 2em 3em; }
+
+	.main
+	{
+		float: left;
+		width: 65%;
+		margin-right: 5%;
+		margin-bottom: 1em;
+	}
+
+	.aside
+	{
+		float: left;
+		width: 30%;
+		margin-bottom: 1em;
+	}

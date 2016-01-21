@@ -1,23 +1,27 @@
-ITS TIME TO PARTY
+This is Kyle Aubins Read me about a coffee company. I enjoy building...
 
-basically coffee beans gotta be grinded while warm
-- how many lbs of beans to each location
-- they have to be warm
--
+a README that should read like a journal of your work to this point):
 
-build a public page for RETAIL
-    - locations
-    - hours of operation 6am - 9pm
-    - each location Min/Max numbers of custom( between low/high we random calculate #)
-    - avg number of purchases for customers
+JavaScript constructed for the purpose of composing store data for the purpose of bettering the business Campfire Coffee.
 
-    not only do we sell coffee by cups, also by lbs
-    - create a conversion between the two
+2 files of HTML added.
+  - One for the purpose of displaying store data in an easy to read, and visually appealing format.
+  - 2nd one for the purpose of a user friendly, informative page.
 
-    each location is an OBJECT
-    each value for each location PROPERTY
-    random calculation METHODS
+2 files of CSS added.
+  - One for the purpose of styling the data page.
+  - 2nd for the purpose of styling the customer page.
 
-    print to webpage METHOD
+1 JavaScript file containing Constructor function with the ability to update store data via web page, or internally. W/e the user chooses.
 
-MONDAY----- 6 object literals(locations)
+
+
+
+
+Wednesday requirements I finished up today. Wednesday Jan 20 2016.
+
+As a business owner, I want the business-side of my site to provide me with accurate sales projections so that I can manage staffing.
+
+As a developer, I want be sure that the public-facing page contains all information that customers would typically seek at a business's website (addresses, hours, contact information, etc.).
+
+As a customer, I want to know if the business recommends any specific use procedures for their products.
